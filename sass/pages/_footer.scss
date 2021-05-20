@@ -1,0 +1,26 @@
+.photoBy {
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.5rem;
+
+  background: rgba(0, 0, 0, 0.3);
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: #ecf0f1;
+  font-weight: 800;
+  font-size: 0.9rem;
+
+  z-index: 2;
+
+  margin-top: 1rem;
+
+  @include respond(phone) {
+    font-size: 0.9rem;
+  }
+
+  & a {
+    color: #f1c40f;
+    text-shadow: 1px 1px red;
+    text-decoration: none;
+  }
+}

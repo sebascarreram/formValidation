@@ -1,0 +1,88 @@
+.group {
+  //  margin-top: 3rem;
+  padding: 2rem;
+  z-index: 2;
+  background-color: #1d1d1d;
+  border-radius: 10px;
+
+  max-width: 45rem;
+  width: 100%;
+
+  @include respond(phone) {
+    top: 50%;
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 1rem;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+
+    &:not(:last-of-type) {
+      margin-bottom: 1rem;
+    }
+
+    & label,
+    input,
+    textarea {
+      font-size: 1rem;
+      @include respond(phone) {
+        font-size: 1.1rem;
+      }
+    }
+
+    & input,
+    textarea {
+      //    border: none;
+      border-bottom: 3px solid #95a5a6;
+      outline: none;
+      border-radius: 4px;
+      background: #2b2b2b;
+      color: #8d8d8d;
+
+      padding: 0.3rem 0.5rem;
+      transition: all 0.2s;
+
+      &:focus {
+        border-bottom: 3px solid #3498db;
+      }
+    }
+
+    & label {
+      color: white;
+      margin-bottom: 0.2rem !important;
+      @include respond(phone) {
+        color: white;
+      }
+    }
+
+    & textarea {
+      height: 7rem;
+      box-sizing: border-box;
+      resize: none;
+      padding: 1rem;
+    }
+  }
+}
+
+.success {
+  border-color: #2ecc71;
+}
+
+.error {
+  border-color: #e74c3c;
+}
+
+small {
+  color: #e74c3c;
+  font-size: 0.8rem;
+  margin-top: 0.3rem;
+}
+
+.counter {
+  font-size: 0.9rem;
+  text-align: end;
+  margin-right: 0.1rem;
+  color: white;
+}

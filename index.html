@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href="#" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="bg"></div>
+    <div class="container">
+      <form id="form" class="group">
+        <div class="group__form">
+          <label for="firstName">First name</label>
+          <input type="text" class="firstName" id="name" />
+          <small></small>
+        </div>
+        <div class="group__form">
+          <label for="lastName">Last name</label>
+          <input type="text" class="lastName" id="lastName" />
+          <small></small>
+        </div>
+        <div class="group__form">
+          <label for="email">Email</label>
+          <input type="email" class="email" id="email" />
+          <small></small>
+        </div>
+        <div class="group__form">
+          <label for="telephone">Telephone</label>
+          <input type="text" class="phone" id="phone" />
+          <small></small>
+        </div>
+        <div class="group__form">
+          <label for="bio">Bio</label>
+          <textarea class="bio" id="bio"></textarea>
+          <small></small>
+        </div>
+        <p id="counter" class="counter">0 / 50</p>
+
+        <input class="btn" type="submit" value="Send message!" />
+        <!--<button class="btn btnSubmit">Send message!</button>-->
+      </form>
+      <p class="photoBy">
+        Photo by
+        <a
+          target="target"
+          href="https://unsplash.com/@juliuscarmine?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Julius Carmine
+        </a>
+        on
+        <a
+          target="target"
+          href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          >Unsplash</a
+        >
+      </p>
+    </div>
+
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
